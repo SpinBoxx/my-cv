@@ -13,17 +13,17 @@
         I am comfortable in Symfony on the back-end and in VueJS on the front-end
       </span>
     </div>
-    <div class="hidden lg:container lg:block">
-      <span class="lg:inset-full lg:left-0 lg:absolute">
-      <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
-        <g>
-          <title>Layer 1</title>
-          <ellipse stroke-width="0" ry="44.5" rx="45" id="svg_1" cy="494.5" cx="56.1" stroke="#000" fill="#4566ef"/>
-          <ellipse stroke-width="0" ry="44.5" rx="45" id="svg_2" cy="382.5" cx="103.1" stroke="#000" fill="#4566ef"/>
-          <ellipse stroke-width="0" ry="44.5" rx="45" id="svg_3" cy="420.5" cx="216.1" stroke="#000" fill="#4566ef"/>
-          <ellipse stroke-width="0" ry="44.5" rx="45" id="svg_4" cy="536.5" cx="166.1" stroke="#000" fill="#4566ef"/>
-        </g>
-      </svg>
+    <div class="hidden xl:block lg:absolute h-screen lg:flex lg:items-end">
+      <span class="">
+        <svg width="260" height="260" xmlns="http://www.w3.org/2000/svg">
+           <g>
+            <title>Layer 1</title>
+            <ellipse fill="#4566ef" stroke="#000" cx="50.99999" cy="158" id="svg_4" rx="45" ry="44.5" stroke-width="0"/>
+            <ellipse fill="#4566ef" stroke="#000" cx="97.99999" cy="46" id="svg_3" rx="45" ry="44.5" stroke-width="0"/>
+            <ellipse fill="#4566ef" stroke="#000" cx="210.99999" cy="84" id="svg_2" rx="45" ry="44.5" stroke-width="0"/>
+            <ellipse fill="#4566ef" stroke="#000" cx="160.99999" cy="200" id="svg_1" rx="45" ry="44.5" stroke-width="0"/>
+           </g>
+        </svg>
       </span>
     </div>
   </div>

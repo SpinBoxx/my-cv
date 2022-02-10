@@ -17,14 +17,15 @@ export default {
 <style>
 @font-face {
   font-family: "Open Sans";
-  src: url("") format("woff2"),
-  url("/fonts/OpenSans-Regular-webfont.woff") format("woff");
+  /*src: url("") format("woff2"),*/
+  /*url("/fonts/OpenSans-Regular-webfont.woff") format("woff");*/
 }
 
 html {
   margin: 0;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 
