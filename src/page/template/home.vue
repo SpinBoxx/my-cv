@@ -1,15 +1,5 @@
-<script>
+<script setup>
 
-
-  // svg.attr
-  window.addEventListener("resize", () => {
-    const svg = document.getElementById('svg');
-    // const svg_circle = document.getElementById('svg-circle');
-    console.log(svg);
-    // svg_circle.remove();;
-    // (window.innerWidth > 1208) ? svg_circle.setAttribute('r', '300') : svg.setAttribute('height', '600');
-    // svg.insertBefore(svg_circle, svg.firstChild);
-  })
 </script>
 
 <template>
