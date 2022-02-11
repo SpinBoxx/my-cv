@@ -5,6 +5,12 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    minHeight : {
+      '700' : '700px'
+    },
+    fontFamily : {
+      'Comfortaa-bold' : ['Comfortaa-bold']
+    }
   },
   plugins: [],
 }

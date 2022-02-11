@@ -1,24 +1,28 @@
+<script setup>
+import Homepage from "./page/homepage";
+
+let fontAwesomeScript = document.createElement('script')
+fontAwesomeScript.setAttribute('src', 'https://kit.fontawesome.com/d4f53ef499.js')
+fontAwesomeScript.setAttribute('crossorigin', 'anonymous')
+document.head.appendChild(fontAwesomeScript)
+</script>
+
+
+
+
 <template>
   <homepage></homepage>
 </template>
 
-<script>
-
-import Homepage from "./page/homepage";
-
-export default {
-  name: 'App',
-  components: {
-    Homepage
-  }
-}
-</script>
 
 <style>
 @font-face {
-  font-family: "Open Sans";
-  /*src: url("") format("woff2"),*/
-  /*url("/fonts/OpenSans-Regular-webfont.woff") format("woff");*/
+  font-family: Comfortaa-semibold;
+  src: url(./assets/fonts/Comfortaa-SemiBold.ttf);
+}
+@font-face {
+  font-family: Comfortaa-bold;
+  src: url(./assets/fonts/Comfortaa-Bold.ttf);
 }
 
 html {
@@ -26,15 +30,19 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   overflow-y: scroll;
+  min-height: 800px;
+}
+body{
+  font-family: Comfortaa-semibold, sans-serif !important;
 }
 
 
 
 #app {
 
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /*font-family: Avenir, Helvetica, Arial, sans-serif;|*/
+  /*-webkit-font-smoothing: antialiased;*/
+  /*-moz-osx-font-smoothing: grayscale;*/
   color: #2c3e50;
 }
 
