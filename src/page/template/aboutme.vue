@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gradient-to-t from-blue-400 h-screen min-h-700 items-center flex flex-row mx-auto" id="aboutme">
+  <div class="bg-gradient-to-t from-blue-400 md:h-screen items-center flex flex-row mx-auto" id="aboutme">
     <div class="container flex flex-col mx-auto p-5 pt-20 justify-center xl:w-1/2">
       <span class="text-2xl text-blue-700">As I said</span>
       <h1 class="text-3xl font-bold tracking-wide mt-4 font-Comfortaa-bold">My name is Quentin MIMAULT</h1>
