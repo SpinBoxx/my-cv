@@ -1,7 +1,11 @@
+<script setup>
+
+</script>
+
 <template>
   <div class="bg-gradient-to-t from-blue-400 md:h-screen items-center flex flex-row mx-auto" id="aboutme">
     <div class="container flex flex-col mx-auto p-5 pt-20 justify-center xl:w-1/2">
-      <span class="text-2xl text-blue-700">As I said</span>
+      <span class="text-2xl text-blue-700">So,</span>
       <h1 class="text-3xl font-bold tracking-wide mt-4 font-Comfortaa-bold">My name is Quentin MIMAULT</h1>
       <div class="border-l-4 border-black pl-3 rounded mt-7">
         <p class="subpixel-antialiased text-base">
@@ -28,6 +32,10 @@
             <i class="fa-solid fa-gamepad"></i>
             <span class="ml-1">Video games</span>
           </div>
+          <div>
+            <i class="fa-solid fa-plane"></i>
+            <span class="ml-1">Trips</span>
+          </div>
         </div>
       </div>
     </div>
@@ -46,12 +54,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: "aboutme"
-}
-</script>
 
 <style scoped>
 
