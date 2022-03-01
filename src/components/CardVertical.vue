@@ -16,7 +16,7 @@ defineProps({
 <template>
   <ToastSuccess v-show="isToastOpen" @close="$emit('close')"></ToastSuccess>
 
-  <div class="bg-white flex flex-col pb-7 w-80 h-fit rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 duration-300 transform hover:scale-105" id="card">
+  <div class="bg-white flex flex-col w-80 h-fit rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 duration-300 transform hover:scale-105" id="card">
     <div>
       <img class="rounded-t-lg w-full " :src="require(`@/assets/images/image_project/${image}`)" alt="" />
     </div>
