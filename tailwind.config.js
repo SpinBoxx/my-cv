@@ -10,7 +10,10 @@ module.exports = {
     },
     fontFamily : {
       'Comfortaa-bold' : ['Comfortaa-bold']
-    }
+    },
+    // height : {
+      // 'fit' : 'fit-content'
+    // }
   },
   plugins: [],
 }
