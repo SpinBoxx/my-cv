@@ -12,6 +12,7 @@ fetch("https://mimo-cv-backend.herokuapp.com/symfony/1/php", {
     "Access-Control-Allow-Origin": "*",
     "Accept": "application/json",
   },
+  mode : "no-cors",
   method: "POST"
 }).then(response => response.json()).then(data => {
   console.log(data['hydra:member'][0].numberClick)
