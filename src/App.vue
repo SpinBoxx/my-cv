@@ -5,6 +5,10 @@ let fontAwesomeScript = document.createElement('script')
 fontAwesomeScript.setAttribute('src', 'https://kit.fontawesome.com/d4f53ef499.js')
 fontAwesomeScript.setAttribute('crossorigin', 'anonymous')
 document.head.appendChild(fontAwesomeScript)
+
+fetch("https://mimo-cv-backend.herokuapp.com/symfony/1/php", {method: "POST"}).then(response => response.json()).then(data => {
+  console.log(data['hydra:member'][0].numberClick)
+}).catch(function(error){console.log(error)})
 </script>
 
 
