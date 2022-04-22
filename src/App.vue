@@ -6,25 +6,15 @@ fontAwesomeScript.setAttribute('src', 'https://kit.fontawesome.com/d4f53ef499.js
 fontAwesomeScript.setAttribute('crossorigin', 'anonymous')
 document.head.appendChild(fontAwesomeScript)
 
-fetch("https://mimo-cv-backend.herokuapp.com/pnl/analytics", {
-  method: "GET",
+const data = {};
+
+fetch("https://mimo-cv-backend.herokuapp.com/pnl/symfony/1/php", {
+  method: "POST",
   headers: {
     "Content-Type": "application/json",
-    "Accept": "application/json",
-  }
-}).then(response => response.json()).then(data => {
-  console.log(data)
-}).catch(function(error){console.log(error)})
-
-fetch("https://mimo-cv-backend.herokuapp.com/symfony/1/php", {
-  method: "POST",
-  mode: "cors",
-  headers: {
-    "Content-Type": "application/ld+json",
-    "Accept": "application/ld+json",
-    "Access-Control-Allow-Origin": "*"
+    "Accept": "application/ld+json"
   },
-  body: {}
+  body: JSON.stringify(data)
 }).then(response => response).then(data => {
   console.log(data)
 }).catch(function(error){console.log(error)})

@@ -5,6 +5,18 @@
 
   const links = githubProjectLinks.links;
 
+  const data = {}
+  function clickProject(projectId){
+    fetch("https://mimo-cv-backend.herokuapp.com/pnl/symfony/" + projectId +"/php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/ld+json"
+      },
+      body: JSON.stringify(data)
+    })
+  }
+
   let isToastOpen = ref(false);
   async function copyGithubLink(link) {
     try{
@@ -29,15 +41,15 @@
       <div class="gap-16 flex flex-row h-auto my-auto flex-wrap justify-center mt-16">
         <CardVertical image="project3.png" title="My CV"
                       description="I wanted a website to introduce myself in a way that was a little more fun than a CV. It also shows what I'm capable of
-                       doing without mock-ups. I remind you that I'm a back-end developer but also able to do front-end with mockups preferably 😉"
-                      :link="links.project1" :isToastOpen="isToastOpen" @open="copyGithubLink" @close="close" :isDisabled="false" />
+                      doing without mock-ups. I remind you that I'm a back-end developer but also able to do front-end with mockups preferably 😉"
+                      @click="clickProject" projectNumber="3" :link="links.project1" :isToastOpen="isToastOpen" @open="copyGithubLink" @close="close" :isDisabled="false" />
 
         <CardVertical image="project4.png" title="Loading project 2 incoming"
-                      description="This is a fictive description for my project 2" :isDisabled="true" :link="links.project2" :isToastOpen="isToastOpen" @open="copyGithubLink" @close="close"/>
+                      @click="clickProject(4)" projectNumber="4" description="This is a fictive description for my project 2" :isDisabled="true" :link="links.project2" :isToastOpen="isToastOpen" @open="copyGithubLink" @close="close"/>
 
         <CardVertical image="project1.jpg" title="Loading project 3 incoming"
                       description="This is a fictive description for my project 3" :isDisabled="true"
-                      :link=links.project3 :isToastOpen="isToastOpen" @open="copyGithubLink" @close="close"/>
+                      @click="clickProject(5)" projectNumber="5" :link=links.project3 :isToastOpen="isToastOpen" @open="copyGithubLink" @close="close"/>
       </div>
     </div>
   </div>

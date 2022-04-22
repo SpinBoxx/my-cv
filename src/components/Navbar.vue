@@ -8,6 +8,18 @@
     isMobile.value = !isMobile.value;
   }
 
+  const data = {}
+  function clickDownloadCv(){
+    fetch("https://mimo-cv-backend.herokuapp.com/pnl/symfony/2/php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/ld+json"
+      },
+      body: JSON.stringify(data)
+    })
+  }
+
   window.addEventListener("load", function() {
     const collection = document.getElementsByClassName('download-my-cv');
     for (let i = 0; i < collection.length; i++) {
@@ -30,7 +42,7 @@
     <div class="container flex flex-wrap justify-between items-center mx-auto">
       <img src="../assets/mimo.png" alt="" class="h-20 w-22">
       <div class="flex md:order-2 z-40">
-        <a href="" id="" download="CV_Quentin_MIMAULT.pdf" class="download-my-cv text-white cursor-pointer hidden md:block bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-3xl text-sm px-6 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+        <a href="" id="" @click="clickDownloadCv" download="CV_Quentin_MIMAULT.pdf" class="download-my-cv text-white cursor-pointer hidden md:block bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-3xl text-sm px-6 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
           Download my CV
         </a>
         <button @click="toggleMobileMenu" data-collapse-toggle="mobile-menu-4" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-4" aria-expanded="false">

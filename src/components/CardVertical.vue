@@ -2,11 +2,12 @@
 import {defineProps, defineEmits} from "vue";
 import ToastSuccess from "@/components/Toast/ToastSuccess";
 
-defineEmits(['close', 'open'])
+defineEmits(['close', 'open','click'])
 defineProps({
   image: String,
   title: String,
   description: String,
+  projectNumber: String,
   link: String,
   isToastOpen: Boolean,
   isDisabled: String
@@ -28,7 +29,7 @@ defineProps({
         {{description}}
       </p>
       <div class="text-right">
-        <button @click="$emit('open', link)" :disabled="isDisabled" :class="[isDisabled ? 'bg-gray-500': 'bg-blue-500 hover:bg-blue-800' ]"
+        <button @click="$emit('open', link);$emit('click',projectNumber)" :disabled="isDisabled" :class="[isDisabled ? 'bg-gray-500': 'bg-blue-500 hover:bg-blue-800' ]"
                 class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white rounded-lg focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
           <i class="fa-solid fa-copy mr-2"></i>Copy github link
         </button>
