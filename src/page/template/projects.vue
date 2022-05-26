@@ -33,7 +33,7 @@
 </script>
 
 <template>
-  <div class="bg-gradient-to-t from-blue-400 flex flex-row mx-auto lg:pb-32" id="projects">
+  <section class="bg-gradient-to-t from-blue-400 flex flex-row mx-auto lg:pb-32" id="projects">
     <div class="container flex flex-col mx-auto p-5 pt-40 pt-0 xl:w-3/5">
       <div class="text-center">
         <h1 class="font-Comfortaa-bold text-4xl">My projects</h1>
@@ -42,7 +42,7 @@
         <CardVertical image="project3.png" title="My CV"
                       description="I wanted a website to introduce myself in a way that was a little more fun than a classic CV. I remind you that I'm not a web
                       designer 😉"
-                      @click="clickProject" projectNumber="3" :link="links.project1" :isToastOpen="isToastOpen" @open="copyGithubLink" @close="close" :isDisabled="false" />
+                      @click="clickProject" projectNumber="3" :link="links.project1" :isToastOpen="isToastOpen" @open="copyGithubLink" @close="close" :isDisabled="false"/>
 
         <CardVertical image="project4.png" title="Loading project 2 incoming"
                       @click="clickProject(4)" projectNumber="4" description="This is a fictive description for my project 2" :isDisabled="true" :link="links.project2" :isToastOpen="isToastOpen" @open="copyGithubLink" @close="close"/>
@@ -52,7 +52,7 @@
                       @click="clickProject(5)" projectNumber="5" :link=links.project3 :isToastOpen="isToastOpen" @open="copyGithubLink" @close="close"/>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>

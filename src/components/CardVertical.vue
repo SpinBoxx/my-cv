@@ -10,7 +10,7 @@ defineProps({
   projectNumber: String,
   link: String,
   isToastOpen: Boolean,
-  isDisabled: String
+  isDisabled: Boolean
 });
 </script>
 

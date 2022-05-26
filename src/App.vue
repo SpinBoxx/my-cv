@@ -15,9 +15,7 @@ fetch("https://mimo-cv-backend.herokuapp.com/pnl/symfony/1/php", {
     "Accept": "application/ld+json"
   },
   body: JSON.stringify(data)
-}).then(response => response).then(data => {
-  console.log(data)
-}).catch(function(error){console.log(error)})
+})
 </script>
 
 

@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="bg-gradient-to-t from-blue-400 h-screen relative items-center min-h-700 flex flex-row mx-auto resize-none" id="home">
+  <section class="bg-gradient-to-t from-blue-400 h-screen relative items-center min-h-700 flex flex-row mx-auto resize-none" id="home">
     <div class="container flex flex-col mx-auto p-5 pt-20 ">
       <div class="max-w-3xl xl:px-24">
         <span class="text-2xl text-blue-700">hello, i am</span>
@@ -33,7 +33,7 @@
         </svg>
       </span>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
