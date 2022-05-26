@@ -40,8 +40,8 @@
       </div>
     </div>
     <div class="hidden xl:absolute xl:h-0 mt-28 xl:block ">
-      <span class="xl:bottom-0 xl:left-0">
-        <svg width="260" height="260" class="xl:ml-8" xmlns="http://www.w3.org/2000/svg">
+      <span class="xl:bottom-0 xl:left-0 ">
+        <svg width="260" height="260" class="xl:ml-8 animate-bounce" xmlns="http://www.w3.org/2000/svg">
            <g>
             <title>Layer 1</title>
             <ellipse fill="#4566ef" stroke="#000" cx="50.99999" cy="158" id="svg_4" rx="45" ry="44.5" stroke-width="0"/>

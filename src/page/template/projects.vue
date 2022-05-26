@@ -40,8 +40,8 @@
       </div>
       <div class="gap-16 flex flex-row h-auto my-auto flex-wrap justify-center mt-16">
         <CardVertical image="project3.png" title="My CV"
-                      description="I wanted a website to introduce myself in a way that was a little more fun than a CV. It also shows what I'm capable of
-                      doing without mock-ups. I remind you that I'm a back-end developer but also able to do front-end with mockups preferably 😉"
+                      description="I wanted a website to introduce myself in a way that was a little more fun than a classic CV. I remind you that I'm not a web
+                      designer 😉"
                       @click="clickProject" projectNumber="3" :link="links.project1" :isToastOpen="isToastOpen" @open="copyGithubLink" @close="close" :isDisabled="false" />
 
         <CardVertical image="project4.png" title="Loading project 2 incoming"
